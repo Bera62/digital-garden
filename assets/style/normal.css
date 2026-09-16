@@ -1,0 +1,201 @@
+/* HIER KOMT JOUW CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.intro-body {
+  background-color: #0b0b0c;
+  color: #e5e5e5;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.focus-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.focus-box {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  gap: 0.75rem;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.focus-box:hover,
+.focus-box:focus {
+  border-color: #ffffff;
+  transform: scale(1.03);
+}
+
+.crosshair {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.btn-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.intro-footer {
+  position: absolute;
+  bottom: 2rem;
+  text-align: center;
+}
+
+.intro-footer p {
+  font-size: 0.75rem;
+  color: #777777;
+  letter-spacing: 0.05em;
+}
+
+/* Styling voor Scherm 2 (log.html) */
+body.garden-page {
+  background-color: #0b0b0c;
+  color: #e5e5e5;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 1rem 1rem 3rem 1rem;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.logo {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  font-weight: bold;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.single-column {
+  max-width: 420px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 3.8rem;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  margin: 0 0 -1.5rem 0;
+  color: #3f3f42;
+}
+
+.garden-card {
+  position: relative;
+  z-index: 2;
+  background-color: #141416;
+  border: 1px solid #28282b;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.shot-preview {
+  margin: 0;
+  height: 180px;
+  background-color: #000000;
+  border-bottom: 1px solid #28282b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shot-tag {
+  font-size: 0.75rem;
+  color: #666666;
+  border: 1px dashed #444444;
+  padding: 0.3rem 0.6rem;
+}
+
+.card-content {
+  padding: 1.25rem;
+}
+
+.card-content h2 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+  color: #ffffff;
+}
+
+.card-content p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #a0a0a0;
+  max-width: 35ch;
+  margin: 0 0 1rem 0;
+}
+
+.action-btn {
+  display: inline-block;
+  color: #e6242b;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.peek-card {
+  opacity: 0.5;
+}
+
+.shot-preview {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.shot-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Styling voor Scherm 3 (story.html) */
+
+.category-label {
+  font-size: 0.75rem;
+  color: #777777;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
