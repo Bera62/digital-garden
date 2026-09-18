@@ -1,6 +1,21 @@
 # Model
 
 Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door studenten worden gemaakt.
+
+### 16 sept checkout
+1. Noem 3 Gestaltprincipes op en laat de ander uitleggen wat ze betekenen en doen.
+- Symmetrie: Elementen die aan weerszijden in balans en evenwichtig zijn opgebouwd
+- Nabijheid: Elementen die dicht bij elkaar staan
+- Gelijkheid: Elementen die dezelfde vorm, kleur of stijl delen
+
+2. Een grid biedt ruimte om te spelen (vrijheid), maar tegelijkertijd ook eenheid en structuur (vastigheid). 
+Wat wordt hiermee bedoeld? 
+- Vastigheid: De lijnen en kolommen zorgen voor strakke uitlijning, gelijke witruimte en rust over de hele pagina
+- Vrijheid: Binnen die lijnen bepaal je hoe je elementen combineert. je kiest zelf hoeveel kolommen een afbeelding of tekst pakt om een layout te maken.
+
+3. Welk principe neem je mee in een laatste iteratie van je ontwerp? 
+- Consistentie
+
 ### 7 sept - checkout
 1. Een digital garden is een website die nooit compleet is en altijd aangevuld kan worden.
 

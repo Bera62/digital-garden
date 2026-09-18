@@ -3,38 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tijdlijn • Cinema Garden</title>
+    <title>Garden Log • Bera74k</title>
     <link rel="stylesheet" href="./assets/style/normal.css" />
   </head>
-  <body class="garden-page">
-    <header class="top-nav">
-      <a href="/index.html" class="logo">BERA74K</a>
-      <button type="button" class="menu-btn" aria-label="Menu">=</button>
+  <body>
+
+      <!-- Navigatie -->
+    <header>
+      <a href="./index.html">BERA74K</a>
+
+      <fieldset class="theme-switcher">
+        <legend class="sr-only">Kies thema</legend>
+        <label>
+          <input type="radio" name="theme" value="light-theme" />
+          <span>licht</span>
+        </label>
+        <label>
+          <input type="radio" name="theme" value="dark-theme" checked />
+          <span>donker</span>
+        </label>
+      </fieldset>
     </header>
 
     <main class="single-column">
-      <h1 class="hero-title">CINEMATIC</h1>
+      <!--  VIDEO 01 -->
+      <section class="video-project">
+        <h1>CINEMATIC</h1>
 
-      <article class="garden-card">
-<figure class="shot-preview">
-  <img src="./assets/images/shoteen.jpg" alt="Filmstill van shot 1" />
-</figure>
+        <article class="card">
+          <figure>
+            <img src="./assets/images/shoteen.jpg" alt="Filmstill shot 1 - Kustlijn met figuur" />
+          </figure>
 
-        <section class="card-content">
-          <h2>PROCES-LOG: RITME &amp; PACING</h2>
-          <p>
-            Mijn openbare werkplaats voor montage, compositie en licht in bewegend beeld.
-          </p>
-          <a href="/story.html" class="action-btn">BEKIJK NOTITIE →</a>
-        </section>
-      </article>
+          <div>
+            <small>VIDEO #01</small>
+            <h2>A MINUTE OF CRETE</h2>
+            <p>
+              Op Kreta draaide ik puur op gevoel: geen shotlist en geen script. Ik wilde genieten van mijn vakantie en tegelijk mooie shots vastleggen. Pas op de tijdlijn begon ik met puzzelen en viel alles op zijn plek</p>
+            <a href="https://www.instagram.com/p/DMqPVJ_MBaq/" target="_blank">KIJK HIER DE HELE VIDEO →</a>
+          </div>
+        </article>
 
-      <article class="garden-card peek-card">
-        <section class="card-content">
-          <h2>NOTITIE #02: CHIAROSCURO</h2>
-          <p>Over harde schaduwen en hoe donkerte het oog stuurt.</p>
-        </section>
-      </article>
+        <!-- Tijdlijn -->
+        <article class="card">
+          <figure>
+            <img src="./assets/images/timeline.jpeg" alt="Tijdlijn weergave van Shot 01 in Premiere Pro" />
+          </figure>
+
+          <div>
+            <small>VIDEO #01 • PREMIERE TIJDLIJN</small>
+            <h2>DE CUTS VAN DIT SHOT</h2>
+            <p>
+              Zonder vooropgezet plan monteren dwong mij om te luisteren naar het materiaal. Ik zocht niet naar de aansluiting van een script, maar een logica om een bepaalde emotie op te wekken bij de kijker</p>
+          </div>
+        </article>
+
+        <!-- Colorgrading -->
+        <article class="card">
+          <div class="grade-grid">
+            <figure>
+              <img src="./assets/images/log.jpeg" alt="Log profiel: vlak en neutraal" />
+              <figcaption>1. LOG</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/images/rec709.jpeg" alt="Rec709 profiel: standaard contrast" />
+              <figcaption>2. REC709</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/images/shoteen.jpg" alt="Final grade: warme cinema look" />
+              <figcaption>3. FINAL</figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <small>VIDEO #01 • COLORGRADING</small>
+            <h2>KLEUR BEPAALT DE VIBE</h2>
+            <p>
+              Ik wilde dat deze video voelde herinnering aan de zomer. Het standaard kleur-profiel (Rec709) was veel te realistisch. Door de schaduwen wat zachter te maken en de hooglichten warmer te maken, kreeg het beeld de dromerige sfeer die ik op dat moment daar voelde</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="./assets/images/themaster.jpg" alt="Referentie still uit The Master (2012) geregisseerd door Paul Thomas Anderson" />
+          </figure>
+
+          <div>
+            <small>VIDEO #01 • INSPIRATIE</small>
+            <h2>THE MASTER (2012)</h2>
+            <p>
+              Tijdens het editen wist ik welk gevoel ik zocht, maar nog niet precies hoe het eruit moest zien. Toen herinnerde ik me dit shot uit The Master. De silhouet tegen de zee gaf me precies de richting die ik nodig had voor mijn eigen beelden</p>
+          </div>
+        </article>
+      </section>
+
+      <hr />
+
+      <!--VIDEO 02-->
+      <section class="video-project">
+        <article class="card peek">
+          <div>
+            <small>VIDEO #02</small>
+            <h2>VIDEO #02</h2>
+            <p>.........</p>
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        <a href="./index.html">← SLUIT FOCUS</a>
+      </footer>
     </main>
   </body>
 </html>
