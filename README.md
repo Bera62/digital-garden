@@ -2,6 +2,14 @@
 
 Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door studenten worden gemaakt.
 
+1. Wat is HTML validatie, waarom is het belangrijk en hoe heb je dat vandaag uitgevoerd?
+- een manier om te checken of je code netjes is en welke foutmeldingen er zijn. Ook kan je zien of er betere alternatieven zijn voor bepaalde code.
+2.  Welke dingen vielen je op?
+- Dat er ook alternatieven worden gegeven en niet alleen errors
+
+3. Welke feedback heb je ontvangen tijdens het gesprek met je docenten?
+- Alle schetsen en logboek goed bijhouden. En meer doen met het thema "cinema". Bijvoorbeeld verwerken in de cookies pop-up en achtergrond van de stappenplan in vorm van een filmstrip etc etc.
+
 ### 16 sept checkout
 1. Noem 3 Gestaltprincipes op en laat de ander uitleggen wat ze betekenen en doen.
 - Symmetrie: Elementen die aan weerszijden in balans en evenwichtig zijn opgebouwd
