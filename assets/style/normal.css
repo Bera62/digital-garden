@@ -1,3 +1,5 @@
+/* LIGHT & DARK 101 */
+
 html {
   color-scheme: light dark;
 
@@ -15,6 +17,7 @@ html {
   --color-accent: #e6242b;
 }
 
+/* Thema kiezen met buttons */
 html:has([value="light-theme"]:checked) {
   color-scheme: light;
 }
@@ -23,6 +26,10 @@ html:has([value="dark-theme"]:checked) {
   color-scheme: dark;
 }
 
+
+/* Algemene basis layout*/
+
+/* zorgt dat padding en borders binnen de breedte vallen */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,12 +44,15 @@ body {
   padding: 1rem 1rem 3rem 1rem;
 }
 
+/* responsive op telefoon */
 .single-column {
   max-width: 420px;
   margin: 0 auto;
 }
 
-/* Navigatie */
+
+/* NAVIGATIE */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -52,6 +62,7 @@ header {
   margin: 0 auto;
 }
 
+/* BERA74K */
 header a {
   color: var(--color-heading);
   text-decoration: none;
@@ -60,6 +71,7 @@ header a {
   letter-spacing: 0.15em;
 }
 
+/* kader licht/donker schakelaar */
 .theme-switcher {
   border: 1px solid var(--border-color);
   border-radius: 4px;
@@ -93,22 +105,29 @@ header a {
   user-select: none;
 }
 
+/* De ronde knopjes */
 .theme-switcher input[type="radio"] {
   accent-color: var(--color-accent);
   cursor: pointer;
 }
 
+/* thema dikgedrukt */
 .theme-switcher label:has(input:checked) {
   color: var(--color-heading);
   font-weight: bold;
 }
 
+
+/* SCHERM 2 */
+
+/* De lijn aan linkerkant van de video */
 .video-project {
   position: relative;
   border-left: 2px solid var(--border-color);
   padding-left: 1rem;
 }
 
+/* CINEMATIC achter card */
 h1 {
   font-size: 3.6rem;
   line-height: 0.85;
@@ -119,12 +138,15 @@ h1 {
   z-index: 1;
 }
 
+/* Stippellijn tussen Video 01 en Video 02 */
 hr {
   border: none;
   border-top: 1px dashed var(--border-color);
   margin: 4rem 0;
 }
 
+
+/* kaarten boven h1 */
 .card {
   position: relative;
   z-index: 2;
@@ -135,6 +157,7 @@ hr {
   margin-bottom: 1.25rem;
 }
 
+/* Video 02 gedimd*/
 .peek {
   opacity: 0.35;
 }
@@ -146,6 +169,7 @@ figure {
   border-bottom: 1px solid var(--border-color);
 }
 
+/* foto's niet vervormen of uitrekken */
 figure img {
   width: 100%;
   height: 100%;
@@ -153,6 +177,10 @@ figure img {
   display: block;
 }
 
+
+/* COLORGRADING 3 afbeeldingen */
+
+/* Flexbox container drie stills */
 .grade-grid {
   display: flex;
   gap: 4px;
@@ -160,6 +188,7 @@ figure img {
   border-bottom: 1px solid var(--border-color);
 }
 
+/* Elke still verdeelt de ruimte gelijk */
 .grade-grid figure {
   flex: 1;
   height: 160px;
@@ -168,6 +197,7 @@ figure img {
   background-color: transparent;
 }
 
+/* Tekst over de afbeeldingen */
 .grade-grid figcaption {
   position: absolute;
   bottom: 0.3rem;
@@ -180,10 +210,15 @@ figure img {
   border-radius: 2px;
 }
 
+
+/* SCHERM 2 */
+
+/* Ruimte om de tekst binnen een kaart */
 .card div {
   padding: 1.25rem;
 }
 
+/* "VIDEO #01" */
 small {
   display: block;
   font-size: 0.7rem;
@@ -192,6 +227,7 @@ small {
   margin-bottom: 0.4rem;
 }
 
+/* Titels op de cards */
 h2 {
   font-size: 1rem;
   color: var(--color-heading);
@@ -205,6 +241,7 @@ p {
   max-width: 35ch;
 }
 
+/* insta knop */
 .card div a {
   display: inline-block;
   margin-top: 1rem;
@@ -219,25 +256,13 @@ p {
   text-decoration: underline;
 }
 
-.theory {
-  background-color: var(--surface-alt);
-  border-left: 3px solid var(--color-accent);
-  padding: 1rem 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
-.theory h3 {
-  font-size: 0.85rem;
-  color: var(--color-accent);
-  margin-bottom: 0.3rem;
-  letter-spacing: 0.05em;
-}
-
+/* Footer knop */
 footer {
   text-align: center;
   padding-top: 1.5rem;
 }
 
+/* Link in footer */
 footer a {
   color: var(--color-accent);
   text-decoration: none;
@@ -246,6 +271,10 @@ footer a {
   letter-spacing: 0.05em;
 }
 
+
+/* SCHERM 1 */
+
+/* Body voor scherm 1 */
 body.intro-body {
   min-height: 100vh;
   display: flex;
@@ -253,6 +282,7 @@ body.intro-body {
   padding: 0;
 }
 
+/* vierkant horizontaal en verticaal centreren */
 .focus-container {
   flex: 1;
   display: flex;
@@ -263,6 +293,7 @@ body.intro-body {
   position: relative;
 }
 
+/* vierkant kader */
 .focus-box {
   width: 150px;
   height: 150px;
@@ -279,18 +310,21 @@ body.intro-body {
   transition: border-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Vierkant licht hover */
 .focus-box:hover,
 .focus-box:focus {
   border-color: var(--color-heading);
   transform: scale(1.03);
 }
 
+/* plusje */
 .crosshair {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1;
 }
 
+/* 'BEKIJK DOSSIER" */
 .btn-label {
   font-size: 0.7rem;
   letter-spacing: 0.15em;
