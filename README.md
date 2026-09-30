@@ -1,5 +1,28 @@
 # Model
 
+## 30 sept checkout: 
+1. Waar staat WCAG en A11y voor?
+- WCAG: Web Content Accesibillity Guidelines
+- A11y: A11y staat voor teogankelijkheid: ervoor zorgen dat iedereen een website of app kan gebruiken, ook mensen met een beperking.
+
+2. Wat vind je lastiger, je laptop/websites alleen met een toetsenbord bedienen of met een screenreader? Waarom? Waar moet je nog mee oefenen?
+- Ik vind het moeilijker om een laptop/website te bedienen met een screenreader. Omdat ik eigenlijk altijd gewend ben om een muis te gebruiken en merk ineens een erg grote verschil omdat dit nieuw voor me is. Zodra ik de shortcuts ken en onder de knie heb zal het wat makkelijker zijn, dus ik moet hiermee oefenen.
+
+3. Met welke beperking rekening houden vind je het meest lastig?
+Vind je dat je beperkt wordt in wat je kunt ontwerpen?
+Of heb je al manieren gevonden om vanuit een solide basis  - die voor iedereen toegankelijk is - allemaal leuke en mooie extra's toe te voegen als je bezoekers dat goed vinden?
+- Ik vind het vooral lastig om rekening te houden met mensen met een visuele beperking, omdat je bij het ontwerpen vaak gebruikmaakt van kleuren, afbeeldingen en visuele elementen. Ik vind niet dat je daardoor beperkt wordt in wat je kunt ontwerpen. Je moet alleen zorgen dat de basis voor iedereen toegankelijk is. Daarna kun je extra’s toevoegen die het ontwerp leuker en mooier maken, zolang ze de toegankelijkheid niet in de weg zitten.
+
+## 28 sept checkout:
+1. Wat bedoelt Vasilis met de uitspraak: Semantiek doet mij niet zo veel, ik ben liever bezig met de UX van HTML?
+- dat het niet uitmaakt of je code theoretisch volgens alle regeltjes klopt, maar hoe de HTML voor de bezoeker werkt.
+2. Wat voor type beperkingen hebben invloed op het gebruiken van websites?
+- Visueel, Auditief, Motorisch, Cognitief
+3. Noem drie manieren om door een website te navigeren met jouw screenreader.
+- Tab 
+- Shortcuts 
+- Luisteren
+
 Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door studenten worden gemaakt.
 
 1. Wat is HTML validatie, waarom is het belangrijk en hoe heb je dat vandaag uitgevoerd?
