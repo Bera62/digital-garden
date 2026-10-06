@@ -27,7 +27,7 @@ html:has([value="dark-theme"]:checked) {
 }
 
 
-/* Algemene basis layout*/
+/* Algemene layout*/
 
 /* zorgt dat padding en borders binnen de breedte vallen */
 * {
@@ -50,8 +50,7 @@ body {
   margin: 0 auto;
 }
 
-
-/* NAVIGATIE */
+/* MARK: NAVIGATIE */
 
 header {
   display: flex;
@@ -62,7 +61,7 @@ header {
   margin: 0 auto;
 }
 
-/* BERA74K */
+/* MARK: BERA74K */
 header a {
   color: var(--color-heading);
   text-decoration: none;
@@ -71,7 +70,7 @@ header a {
   letter-spacing: 0.15em;
 }
 
-/* kader licht/donker schakelaar */
+/* licht/donker buttons */
 .theme-switcher {
   border: 1px solid var(--border-color);
   border-radius: 4px;
@@ -129,7 +128,7 @@ header a {
 
 /* CINEMATIC achter card */
 h1 {
-  font-size: 3.6rem;
+  font-size: 4rem;
   line-height: 0.85;
   letter-spacing: -0.04em;
   color: var(--color-h1);
@@ -144,7 +143,6 @@ hr {
   border-top: 1px dashed var(--border-color);
   margin: 4rem 0;
 }
-
 
 /* kaarten boven h1 */
 .card {
@@ -271,6 +269,96 @@ footer a {
   letter-spacing: 0.05em;
 }
 
+
+/* RESPONSIVE LAYOUT (HORIZONTAAL OP LAPTOP/DESKTOP) */
+@media (min-width: 768px) {
+  .single-column,
+  header {
+    max-width: 1200px;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+    align-items: stretch; /* Zorgt dat alle kaarten even lang worden */
+  }
+
+  .cards-grid .card {
+    margin-bottom: 0;
+  }
+}
+
+
+/* SCHERM COOKIES */
+/* CONSENT SCHERM VORMGEVING */
+
+.consent-card {
+  width: 100%;
+  max-width: 300px;
+  background-color: var(--surface);
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  z-index: 2;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.consent-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--color-heading);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.75rem;
+}
+
+.consent-desc {
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+.consent-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.btn-consent {
+  display: block;
+  width: 100%;
+  padding: 0.65rem 0.5rem;
+  text-align: center;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid var(--border-color);
+  background-color: transparent;
+  color: var(--color-heading);
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-consent:hover,
+.btn-consent:focus {
+  border-color: var(--color-heading);
+}
+
+.btn-consent.primary {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.btn-consent.primary:hover {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
 
 /* SCHERM 1 */
 
