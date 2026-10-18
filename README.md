@@ -1,4 +1,7 @@
+## Learning Log
 # Model
+
+### Sprint 2 (21 sept - 02 okt)
 
 ## 30 sept checkout: 
 1. Waar staat WCAG en A11y voor?
@@ -33,6 +36,8 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 3. Welke feedback heb je ontvangen tijdens het gesprek met je docenten?
 - Alle schetsen en logboek goed bijhouden. En meer doen met het thema "cinema". Bijvoorbeeld verwerken in de cookies pop-up en achtergrond van de stappenplan in vorm van een filmstrip etc etc.
 
+### Sprint 1 (7 sept - 18 sept)
+
 ### 16 sept checkout
 1. Noem 3 Gestaltprincipes op en laat de ander uitleggen wat ze betekenen en doen.
 - Symmetrie: Elementen die aan weerszijden in balans en evenwichtig zijn opgebouwd
@@ -47,6 +52,10 @@ Wat wordt hiermee bedoeld?
 3. Welk principe neem je mee in een laatste iteratie van je ontwerp? 
 - Consistentie
 
+### 8/9 sept -
+
+
+
 ### 7 sept - checkout
 1. Een digital garden is een website die nooit compleet is en altijd aangevuld kan worden.
 
@@ -54,7 +63,11 @@ Wat wordt hiermee bedoeld?
 
 3. Ik wil een digital garden maken over mijn videografie/fotografie. Mijn werk/verhalen laten zien en de keuzes hierachter duidelijker uitleggen. Ook wil ik vertellen over andere filmmakers, regisseurs en cinematographers waar ik mijn inspiratie vandaan haal.
 
-## Learning Log
+<img width="3773" height="2705" alt="7septss" src="https://github.com/user-attachments/assets/4d9de59b-b64b-431f-97d3-0672d8688b5e" />
+
+
+
+### Sprint 0 (31 aug - 4 sept)
 
 ### [...]
 test test
