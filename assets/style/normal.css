@@ -1,4 +1,6 @@
-/* LIGHT & DARK 101 */
+/* =========================================================
+   1. THEMA-INSTELLINGEN & VARIABELEN (LIGHT & DARK 101)
+   ========================================================= */
 
 html {
   color-scheme: light dark;
@@ -17,7 +19,7 @@ html {
   --color-accent: #e6242b;
 }
 
-/* Thema kiezen met buttons */
+/* Thema handmatig forceren via radio buttons */
 html:has([value="light-theme"]:checked) {
   color-scheme: light;
 }
@@ -27,9 +29,10 @@ html:has([value="dark-theme"]:checked) {
 }
 
 
-/* Algemene layout*/
+/* =========================================================
+   2. BASIS RESET & ALGEMENE LAYOUT
+   ========================================================= */
 
-/* zorgt dat padding en borders binnen de breedte vallen */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -44,15 +47,18 @@ body {
   padding: 1rem 1rem 3rem 1rem;
 }
 
-/* responsive op telefoon */
+/* Kolombreedte geoptimaliseerd voor mobiel */
 .single-column {
   max-width: 420px;
   margin: 0 auto;
 }
 
-/* MARK: NAVIGATIE */
 
-header {
+/* =========================================================
+   3. HOOFDNAVIGATIE & THEMA-SWITCHER (LOG.HTML)
+   ========================================================= */
+
+header.main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,8 +67,7 @@ header {
   margin: 0 auto;
 }
 
-/* MARK: BERA74K */
-header a {
+header.main-header a {
   color: var(--color-heading);
   text-decoration: none;
   font-weight: bold;
@@ -70,7 +75,6 @@ header a {
   letter-spacing: 0.15em;
 }
 
-/* licht/donker buttons */
 .theme-switcher {
   border: 1px solid var(--border-color);
   border-radius: 4px;
@@ -104,29 +108,28 @@ header a {
   user-select: none;
 }
 
-/* De ronde knopjes */
 .theme-switcher input[type="radio"] {
   accent-color: var(--color-accent);
   cursor: pointer;
 }
 
-/* thema dikgedrukt */
 .theme-switcher label:has(input:checked) {
   color: var(--color-heading);
   font-weight: bold;
 }
 
 
-/* SCHERM 2 */
+/* =========================================================
+   4. DOSSIER PAGINA (LOG.HTML): STRUCTUUR & TITEL
+   ========================================================= */
 
-/* De lijn aan linkerkant van de video */
 .video-project {
   position: relative;
   border-left: 2px solid var(--border-color);
   padding-left: 1rem;
 }
 
-/* CINEMATIC achter card */
+/* Grote achterliggende titel */
 h1 {
   font-size: 4rem;
   line-height: 0.85;
@@ -137,14 +140,23 @@ h1 {
   z-index: 1;
 }
 
-/* Stippellijn tussen Video 01 en Video 02 */
 hr {
   border: none;
   border-top: 1px dashed var(--border-color);
   margin: 4rem 0;
 }
 
-/* kaarten boven h1 */
+.cards-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* =========================================================
+   5. DOSSIER PAGINA (LOG.HTML): CARDS & MEDIA
+   ========================================================= */
+
 .card {
   position: relative;
   z-index: 2;
@@ -155,7 +167,12 @@ hr {
   margin-bottom: 1.25rem;
 }
 
-/* Video 02 gedimd*/
+.card article {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .peek {
   opacity: 0.35;
 }
@@ -167,7 +184,6 @@ figure {
   border-bottom: 1px solid var(--border-color);
 }
 
-/* foto's niet vervormen of uitrekken */
 figure img {
   width: 100%;
   height: 100%;
@@ -175,19 +191,16 @@ figure img {
   display: block;
 }
 
-
-/* COLORGRADING 3 afbeeldingen */
-
-/* Flexbox container drie stills */
-.grade-grid {
+/* Colorgrading 3 beelden grid */
+figure.grade-grid {
   display: flex;
   gap: 4px;
   background-color: transparent;
   border-bottom: 1px solid var(--border-color);
+  height: auto;
 }
 
-/* Elke still verdeelt de ruimte gelijk */
-.grade-grid figure {
+figure.grade-grid figure {
   flex: 1;
   height: 160px;
   position: relative;
@@ -195,8 +208,7 @@ figure img {
   background-color: transparent;
 }
 
-/* Tekst over de afbeeldingen */
-.grade-grid figcaption {
+figure.grade-grid figcaption {
   position: absolute;
   bottom: 0.3rem;
   left: 0.3rem;
@@ -209,14 +221,15 @@ figure img {
 }
 
 
-/* SCHERM 2 */
+/* =========================================================
+   6. DOSSIER PAGINA (LOG.HTML): TEKST & ACTIES
+   ========================================================= */
 
-/* Ruimte om de tekst binnen een kaart */
-.card div {
+.card-content {
+  display: block;
   padding: 1.25rem;
 }
 
-/* "VIDEO #01" */
 small {
   display: block;
   font-size: 0.7rem;
@@ -225,7 +238,6 @@ small {
   margin-bottom: 0.4rem;
 }
 
-/* Titels op de cards */
 h2 {
   font-size: 1rem;
   color: var(--color-heading);
@@ -239,8 +251,7 @@ p {
   max-width: 35ch;
 }
 
-/* insta knop */
-.card div a {
+.card-content a {
   display: inline-block;
   margin-top: 1rem;
   color: var(--color-accent);
@@ -250,17 +261,15 @@ p {
   letter-spacing: 0.05em;
 }
 
-.card div a:hover {
+.card-content a:hover {
   text-decoration: underline;
 }
 
-/* Footer knop */
 footer {
   text-align: center;
   padding-top: 1.5rem;
 }
 
-/* Link in footer */
 footer a {
   color: var(--color-accent);
   text-decoration: none;
@@ -270,10 +279,13 @@ footer a {
 }
 
 
-/* RESPONSIVE LAYOUT (HORIZONTAAL OP LAPTOP/DESKTOP) */
+/* =========================================================
+   7. DESKTOP RESPONSIVE GRID (VANAF 768PX)
+   ========================================================= */
+
 @media (min-width: 768px) {
   .single-column,
-  header {
+  header.main-header {
     max-width: 1200px;
   }
 
@@ -281,7 +293,7 @@ footer a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.25rem;
-    align-items: stretch; /* Zorgt dat alle kaarten even lang worden */
+    align-items: stretch;
   }
 
   .cards-grid .card {
@@ -290,8 +302,72 @@ footer a {
 }
 
 
-/* SCHERM COOKIES */
-/* CONSENT SCHERM VORMGEVING */
+/* =========================================================
+   8. SCHERM 1 (INDEX.HTML): ENTER GARDEN VIEWPORT
+   ========================================================= */
+
+body.intro-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.focus-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.focus-box {
+  width: 150px;
+  height: 150px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-heading);
+  gap: 0.75rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.focus-box:hover,
+.focus-box:focus {
+  border-color: var(--color-heading);
+  transform: scale(1.03);
+}
+
+strong.crosshair {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1;
+  display: block;
+}
+
+.intro-footer {
+  position: absolute;
+  bottom: 2rem;
+  text-align: center;
+}
+
+.intro-footer p {
+  font-size: 0.75rem;
+  color: var(--color-subtle);
+  letter-spacing: 0.05em;
+}
+
+
+/* =========================================================
+   9. SCHERM 2 (HOME.HTML): DATA & PRIVACY CARD
+   ========================================================= */
 
 .consent-card {
   width: 100%;
@@ -310,10 +386,30 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  color: var(--color-heading);
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 0.75rem;
+}
+
+/* Oplossing voor de doorstreep-bug: h1 binnen de consent-header resetten */
+.consent-header h1.btn-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-heading);
+  font-weight: normal;
+  margin: 0;
+  line-height: normal;
+  position: static;
+}
+
+/* Reset voor labels binnen focus-box (index.html) */
+small.btn-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
+  display: block;
 }
 
 .consent-desc {
@@ -358,75 +454,4 @@ footer a {
 .btn-consent.primary:hover {
   background-color: var(--color-accent);
   color: #ffffff;
-}
-
-/* SCHERM 1 */
-
-/* Body voor scherm 1 */
-body.intro-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-}
-
-/* vierkant horizontaal en verticaal centreren */
-.focus-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
-  position: relative;
-}
-
-/* vierkant kader */
-.focus-box {
-  width: 150px;
-  height: 150px;
-  border: 1px solid var(--border-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: var(--color-heading);
-  gap: 0.75rem;
-  font-size: 0.7rem;
-  letter-spacing: 0.15em;
-  transition: border-color 0.3s ease, transform 0.2s ease;
-}
-
-/* Vierkant licht hover */
-.focus-box:hover,
-.focus-box:focus {
-  border-color: var(--color-heading);
-  transform: scale(1.03);
-}
-
-/* plusje */
-.crosshair {
-  font-size: 1.5rem;
-  font-weight: 300;
-  line-height: 1;
-}
-
-/* 'BEKIJK DOSSIER" */
-.btn-label {
-  font-size: 0.7rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-}
-
-.intro-footer {
-  position: absolute;
-  bottom: 2rem;
-  text-align: center;
-}
-
-.intro-footer p {
-  font-size: 0.75rem;
-  color: var(--color-subtle);
-  letter-spacing: 0.05em;
 }
