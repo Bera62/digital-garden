@@ -50,7 +50,6 @@ body {
   font-family: sans-serif;
   padding: 1rem 1rem 3rem 1rem;
 }
-
 /* Kolombreedte geoptimaliseerd voor mobiel */
 .single-column {
   max-width: 420px;
@@ -505,4 +504,8 @@ small.btn-label {
 .btn-consent.primary:hover {
   background-color: var(--color-accent);
   color: #ffffff;
+}
+
+.cards-grid {
+  position: relative;
 }
