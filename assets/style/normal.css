@@ -17,6 +17,10 @@ html {
   --color-muted: light-dark(#5c5c63, #a0a0a0);
   --color-subtle: light-dark(#7c7c85, #888888);
   --color-accent: #e6242b;
+
+  /* Filmrol variabelen: zacht in light mode, donker in dark mode */
+  --film-bg: light-dark(#e5e5ea, #0b0b0d);
+  --film-hole: light-dark(#c7c7cc, #2c2c31);
 }
 
 /* Thema handmatig forceren via radio buttons */
@@ -129,9 +133,9 @@ header.main-header a {
   padding-left: 1rem;
 }
 
-/* Grote achterliggende titel */
+/* Grote achterliggende titel (schaalt automatisch mee bij langere woorden) */
 h1 {
-  font-size: 4rem;
+  font-size: clamp(2.4rem, 8.5vw, 4rem);
   line-height: 0.85;
   letter-spacing: -0.04em;
   color: var(--color-h1);
@@ -146,29 +150,75 @@ hr {
   margin: 4rem 0;
 }
 
+
+/* =========================================================
+   5. DE GROTE 35MM FILMROL CONTAINER (.cards-grid)
+   ========================================================= */
+
 .cards-grid {
   list-style: none;
-  padding: 0;
   margin: 0;
+  position: relative;
+  z-index: 2;
+  background-color: var(--film-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 24px 1rem 24px 1rem;
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+/* Tandwielgaten boven en onder */
+.cards-grid::before,
+.cards-grid::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent 0px,
+    transparent 12px,
+    var(--film-hole) 12px,
+    var(--film-hole) 24px,
+    transparent 24px,
+    transparent 36px
+  );
+  pointer-events: none;
+  z-index: 5;
+}
+
+.cards-grid::before {
+  top: 7px;
+}
+
+.cards-grid::after {
+  bottom: 7px;
 }
 
 
 /* =========================================================
-   5. DOSSIER PAGINA (LOG.HTML): CARDS & MEDIA
+   6. INDIVIDUELE FILMFRAMES (.card)
    ========================================================= */
 
 .card {
   position: relative;
-  z-index: 2;
+  flex: 0 0 85%;
+  scroll-snap-align: center;
   background-color: var(--surface);
   border: 1px solid var(--border-color);
   border-radius: 4px;
   overflow: hidden;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
 .card article {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
 }
@@ -197,12 +247,12 @@ figure.grade-grid {
   gap: 4px;
   background-color: transparent;
   border-bottom: 1px solid var(--border-color);
-  height: auto;
+  height: 200px;
 }
 
 figure.grade-grid figure {
   flex: 1;
-  height: 160px;
+  height: 200px;
   position: relative;
   border-bottom: none;
   background-color: transparent;
@@ -222,11 +272,13 @@ figure.grade-grid figcaption {
 
 
 /* =========================================================
-   6. DOSSIER PAGINA (LOG.HTML): TEKST & ACTIES
+   7. DOSSIER PAGINA: TEKST & ACTIES
    ========================================================= */
 
 .card-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   padding: 1.25rem;
 }
 
@@ -253,7 +305,8 @@ p {
 
 .card-content a {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
   color: var(--color-accent);
   text-decoration: none;
   font-size: 0.8rem;
@@ -280,7 +333,7 @@ footer a {
 
 
 /* =========================================================
-   7. DESKTOP RESPONSIVE GRID (VANAF 768PX)
+   8. DESKTOP RESPONSIVE GRID (VANAF 768PX)
    ========================================================= */
 
 @media (min-width: 768px) {
@@ -292,18 +345,18 @@ footer a {
   .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.25rem;
-    align-items: stretch;
+    overflow-x: visible;
+    padding: 26px 1.25rem 26px 1.25rem;
   }
 
   .cards-grid .card {
-    margin-bottom: 0;
+    flex: unset;
   }
 }
 
 
 /* =========================================================
-   8. SCHERM 1 (INDEX.HTML): ENTER GARDEN VIEWPORT
+   9. SCHERM 1 (INDEX.HTML): ENTER GARDEN VIEWPORT
    ========================================================= */
 
 body.intro-body {
@@ -366,7 +419,7 @@ strong.crosshair {
 
 
 /* =========================================================
-   9. SCHERM 2 (HOME.HTML): DATA & PRIVACY CARD
+   10. SCHERM 2 (HOME.HTML): DATA & PRIVACY CARD
    ========================================================= */
 
 .consent-card {
@@ -390,7 +443,6 @@ strong.crosshair {
   padding-bottom: 0.75rem;
 }
 
-/* Oplossing voor de doorstreep-bug: h1 binnen de consent-header resetten */
 .consent-header h1.btn-label {
   font-size: 0.7rem;
   letter-spacing: 0.15em;
@@ -402,7 +454,6 @@ strong.crosshair {
   position: static;
 }
 
-/* Reset voor labels binnen focus-box (index.html) */
 small.btn-label {
   font-size: 0.7rem;
   letter-spacing: 0.15em;
