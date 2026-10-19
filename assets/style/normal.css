@@ -18,12 +18,10 @@ html {
   --color-subtle: light-dark(#7c7c85, #888888);
   --color-accent: #e6242b;
 
-  /* Filmrol variabelen: zacht in light mode, donker in dark mode */
   --film-bg: light-dark(#e5e5ea, #0b0b0d);
   --film-hole: light-dark(#c7c7cc, #2c2c31);
 }
 
-/* Thema handmatig forceren via radio buttons */
 html:has([value="light-theme"]:checked) {
   color-scheme: light;
 }
