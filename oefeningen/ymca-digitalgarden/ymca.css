@@ -1,9 +1,140 @@
-/* MARK: fonts */
 @font-face {
   font-family: 'Seraphs';
-  src: url('font/SeraphsVF.woff2') format('woff2'), /* Modern Browsers */
+  src: url('font/SeraphsVF.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
 }
-/* MARK: items */
-body{
-  font-family: 'Seraphs';
+
+:root {
+  --font-size-base: 1.25rem;
+  --line-height-factor: 1.5;
+  --line-height-unit: calc(var(--font-size-base) * var(--line-height-factor));
+
+  --column-width-corner: calc(var(--line-height-unit) * 5);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Seraphs', serif;
+  background-color: #ffffff;
+  color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: auto 1fr auto;
+  padding: 60px;
+  width: 100vw;
+  height: calc(100vh - 30px);
+}
+
+main p,
+main em,
+main strong {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-factor);
+  letter-spacing: 0.15em;
+  word-spacing: 0.2em;
+  text-transform: lowercase;
+  font-weight: normal;
+}
+
+main p:first-of-type {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
+  align-self: start;
+}
+
+main em {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
+  align-self: start;
+  font-style: italic;
+  letter-spacing: 0.3em;
+}
+
+main h1 {
+  grid-column: 2;
+  grid-row: 2;
+  place-self: center;
+  font-size: clamp(5rem, 18vw, 16rem);
+  line-height: 0.85;
+  letter-spacing: 0.05em;
+  font-weight: 900;
+  text-align: center;
+  user-select: none;
+}
+
+main strong {
+  grid-column: 1;
+  grid-row: 3;
+  justify-self: start;
+  align-self: end;
+  font-weight: 600;
+}
+
+main p:last-of-type {
+  grid-column: 3;
+  grid-row: 3;
+  justify-self: end;
+  align-self: end;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: calc(var(--line-height-unit) * 0.5);
+}
+
+footer small {
+  font-size: calc(var(--font-size-base) * 0.7);
+  line-height: var(--line-height-factor);
+  letter-spacing: 0.1em;
+  color: #777777;
+}
+
+@keyframes --pulse-ymca {
+  0% {
+    font-weight: 100;
+    font-variation-settings: "SERF" 0;
+    transform: scale(0.92);
+  }
+  100% {
+    font-weight: 900;
+    font-variation-settings: "SERF" 100;
+    transform: scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  main h1 {
+    animation-name: --pulse-ymca;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
 }
