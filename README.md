@@ -192,6 +192,19 @@ Een paar punten wat hij heeft benoemd:
 - teksten achter de card moeten h2 zijn
 - nesting gebruiken ipv classes
 
+#Focus state vormgeving in thema van mijn site:
+<img width="1166" height="348" alt="image" src="https://github.com/user-attachments/assets/c85ded92-db91-45a9-b181-0fbe6c1e1419" />
+Before
+<img width="1044" height="342" alt="image" src="https://github.com/user-attachments/assets/7227d5c0-8b8a-43cf-9d7e-393556e6355a" />
+After
+
+Toelichting:
+Tijdens de peerfeedback sessie kreeg ik de tip dat de standaard blauwe focusring (als je tabt met je toetsenbord) niet paste bij de donkere stijl van mijn site.
+
+Ik wilde het randje niet uitzetten voor de toegankelijkheid, dus heb ik in mijn CSS bij de * reset 1 regel toegevoegd: outline-color: var(--color-accent);. Hierdoor blijft toetsenbordnavigatie gewoon goed werken, maar is de kleur veranderd naar rood en past dit bij de thema van mijn site.
+
+
+
 
 </details>
 
