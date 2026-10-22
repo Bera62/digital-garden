@@ -5,12 +5,14 @@
 <details>
   <summary>Sprint 3</summary>
 
-Opdracht 1
+<img width="3619" height="2696" alt="IMG_0580" src="https://github.com/user-attachments/assets/852a0269-f193-46e0-a039-8dc425680646" />
+<img width="3492" height="2526" alt="IMG_0578" src="https://github.com/user-attachments/assets/32ae22d0-2b8e-4bf4-a5b5-bd62eac3ccab" />
+<img width="3303" height="2482" alt="IMG_0577" src="https://github.com/user-attachments/assets/cec34736-3ac7-4c60-b4b5-5fbba53bfda6" />
 
+Opdracht 1:
 Ik heb met mijn schetsen vooral gekeken naar grootte en plaatsing. Bij sommige schetsen wilde ik YMCA meer laten opvallen en bij andere juist het woord fun. Zo probeerde ik meer afwisseling in de tekst te krijgen
 
-Opdracht 2
-
+Opdracht 2:
 Wat wil je bij de kijker bereiken met je vormgeving?:
 
 Dat de tekst interessant en speels overkomt.
@@ -26,19 +28,19 @@ Hoe zou je dit kunnen aanpakken in code?
 Door de tekst in HTML op te delen en in CSS te spelen met grootte,regelafstand, letterafstand en de plaatsing van de tekst.
 
 Stap 1:
-
-￼
-
-HTML opzet: Bewust géén klasses en géén divs gebruikt. Elk stukje tekst heeft een semantische betekenis gekregen die past bij de song: <h1> voor het refrein, <em> voor klemtoon op 'fun', <strong> voor 'to stay', en <p> voor de verbindende tekstfragmenten. Hierdoor is de HTML zuiver en betekenisvol.
+<img width="2288" height="1156" alt="image" src="https://github.com/user-attachments/assets/e3026c12-fe48-410c-bdf1-b91b37c4a366" />
+HTML opzet: Bewust geen klasses en geen divs gebruikt. Elk stukje tekst heeft een semantische betekenis gekregen die past bij de song: <h1> voor het refrein, <em> voor klemtoon op 'fun', <strong> voor 'to stay', en <p> voor de verbindende tekstfragmenten. Hierdoor is de HTML zuiver en betekenisvol.
 
 Stap 2:
-￼
-￼
-￼
+<img width="2290" height="1606" alt="image" src="https://github.com/user-attachments/assets/b622c847-90b2-4efd-b2af-9a05ac99dcb3" />
+<img width="2296" height="1682" alt="image" src="https://github.com/user-attachments/assets/638db9d9-4da2-4e6a-97dd-365f701a5708" />
+<img width="2302" height="710" alt="image" src="https://github.com/user-attachments/assets/46d2dc09-ef87-4869-8df9-4f86c2066fb6" />
+CSS styling zonder klasses: Elementen direct aangesproken via hun tag (em, strong, h1). Voor de twee paragrafen zijn de logische pseudo-classes :first-of-type en :last-of-type gebruikt. Het 3x3 grid plaatst alles op de posities van de schets: hoeken aan de randen en 'YMCA' gigantisch in het midden. Geen kleur toegepast, uitsluitend macro-typografische contrasten (groot vs. klein, italic vs. rechtop, tracking).
 
-CSS styling zonder klasses: Elementen direct aangesproken via hun tag (em, strong, h1). Voor de twee paragrafen zijn de logische pseudo-classes :first-of-type en :last-of-type gebruikt. Het 3x3 grid plaatst alles op de posities van de schets: hoeken aan de randen en 'YMCA' gigantisch in het midden. Geen kleur toegepast, uitsluitend macro-typografische contrasten (groot vs. klein, italic vs. rechtop, tracking).  Extra uitleg: Omdat classes geen semantische betekenis hebben, wilde ik ze niet gebruiken. Ik heb de songtekst verdeeld over logische tags: em voor de nadruk op fun, strong voor to stay, en h1 voor het refrein. In CSS hoefde ik daardoor alleen die elementen aan te roepen, plus :first-of-type en :last-of-type voor de eerste en laatste paragraaf. Dat houdt de HTML 100% semantisch en schoon.
+Extra uitleg: Omdat classes geen semantische betekenis hebben, wilde ik ze niet gebruiken. Ik heb de songtekst verdeeld over logische tags: em voor de nadruk op fun, strong voor to stay, en h1 voor het refrein. In CSS hoefde ik daardoor alleen die elementen aan te roepen, plus :first-of-type en :last-of-type voor de eerste en laatste paragraaf. Dat houdt de HTML 100% semantisch en schoon.
 
-Checkout maandag wg 1 sprint 3:  Vraag 1: Begrippen uit de artikelen
+Checkout maandag wg 1 sprint 3:  
+Vraag 1: Begrippen uit de artikelen
 
 * Kerning: De ruimte tussen twee specifieke letters netjes maken. Soms staan letters als 'T' en 'y' standaard te ver uit elkaar of botsen ze bijna, en met kerning schuif je dat een stukje bij. 
 * Tracking: De tussenruimte over een heel woord of een hele regel tegelijk aanpassen. Dit gebruik je vooral bij hoofdletters (kapitalen) om ze wat meer ademruimte te geven zodat het makkelijker leest. 
@@ -71,7 +73,7 @@ Waarom:
 Grootte snapt iedereen meteen. Je kijkt altijd instinctief eerst naar het grootste ding op een pagina. Zelfs als je geen kleuren gebruikt en maar één lettertype hebt, kun je puur door het formaat direct laten zien: "dit is de titel en dit zijn de details". Dat zag je ook bij mijn YMCA-schets: doordat YMCA mega groot in beeld staat, weet je meteen waar het over gaat.
 
 Huiswerk voor woensdag (sprint 3, werkgroep 2)
-￼
+<img width="3024" height="1722" alt="image" src="https://github.com/user-attachments/assets/fd40796d-520a-4661-a5bb-7c42202152a1" />
 
 Ik heb mijn schets als eerste omgezet naar gewone HTML en een beetje basis-CSS. De hele zin heb ik opgeknipt in losse stukjes: p, em, strong en een h1 voor het midden. In de CSS heb ik die woorden naar de vier hoeken geduwd en 'YMCA' flink groot in het midden gezet. Dit is nu de eerste ruwe versie in zwart-wit met het Seraphs lettertype.
 
@@ -82,32 +84,32 @@ Dingen die ik nog niet naar CSS kon vertalen (Huiswerkvraag 2)
 - (De spanning uit de schets: Op papier voelt de witruimte tussen het midden en de hoeken een stuk beter. In de browser oogt het nu nog wat stijfjes, vooral omdat het nog niet strak in een goed grid vastzit.)
 —————————————————————————————————————————
 
- Opdracht:
+Opdracht:
 
 1.Bepaal de line-height bij je gekozen font-size
 2.Baseer je column-width op een veelvoud van je line-height
 3.Kun je daarmee een grid maken dat past bij je  pagina ontwerp, rekening houdend met je measure?
 4.Ja? Ga dan verder met bouwen aan je page Nee? Pas line-height en/of font-size aan en ga terug naar 1.
- Antwoorden:  
+
+Antwoorden:  
 1. Voor de normale tekst heb ik een font-size van 1.25rem (20px) gekozen. Daar heb ik een line-height van 1.5 bij gepakt, wat uit de artikelen ook naar voren kwam als fijne verhouding. Dat betekent dat één regelhoogte bij mij 20px × 1.5 = 30px is. Die 30px is meteen mijn vaste bouwsteen voor de rest van de pagina.
 2. Mijn basiseenheid is 30px. Voor de twee buitenste kolommen (waar de woorden in de hoeken in staan) heb ik dat vermenigvuldigd met 5: 5 × 30px = 150px. De middelste kolom heeft gewoon 1fr gekregen, zodat 'YMCA' alle overgebleven ruimte in het midden opeist.
 3. Ja, dit werkt heel relaxed. Omdat er in die hoeken maar korte stukjes tekst staan zoals it’s en to stay, passen die letters makkelijk binnen die 150px breedte zonder dat ze raar worden afgebroken.
 4. Ik heb die 30px ook direct doorgevoerd in de rest van de pagina: de padding rondom het hele scherm is precies 2 × 30px = 60px. Zo klopt de witruimte overal wiskundig met de regelafstand van de tekst.
-
-
-￼
-￼
+<img width="1282" height="260" alt="image" src="https://github.com/user-attachments/assets/3bb3f35c-22c9-49ad-8d28-86c99ed2f2eb" />
+<img width="850" height="326" alt="image" src="https://github.com/user-attachments/assets/62210482-6560-4b0b-a2a2-1051b27388d7" />
 Hier heb ik het grid gekoppeld aan de typografie. Mijn normale tekst is 20px met een regelafstand van 1.5, wat neerkomt op 30px per regel. In plaats van willekeurige getallen te kiezen, heb ik de zij-kolommen 150px breed gemaakt (5 × die 30px) en de padding rond het scherm 60px (2 × die 30px). De middelste kolom pakt 1fr voor 'YMCA'. Zo klopt de verhouding overal met één vaste ritme-eenheid.
 
+<img width="3024" height="1722" alt="image" src="https://github.com/user-attachments/assets/9cd3f433-e056-4417-87f7-c587abd61e5f" />
 
-￼
 Het resultaat in de browser met de grid-overlay aan. Je ziet dat de woorden in de hoeken netjes binnen de berekende kolommen van 150px blijven en 'YMCA' precies in het midden staat. Door clamp() schaalt de grote titel vanzelf mee met het scherm, zonder dat hij uit zijn gridvak breekt.
 
-Checkout woensdag sprint 3 werkgroep 2:  1. Waarom een grid gebruiken?
+Checkout woensdag sprint 3 werkgroep 2:  
+1. Waarom een grid gebruiken?
 Voor mij als ontwerper: Het geeft een soort houvast en structuur. Ik hoef niet steeds te gokken waar iets moet staan. Mijn CSS blijft hierdoor overzichtelijk.
 Voor de bezoeker: Het zorgt voor rust. Doordat elementen op vaste lijnen staan, begrijpt je sneller hoe de pagina in elkaar zit en leest het veel fijner.
 
-2. Drie manieren om chaos in je ontwerp te voorkomen
+3. Drie manieren om chaos in je ontwerp te voorkomen
 1. Een vaste schaal of modulair grid gebruiken: Geen random groottes of marges kiezen, maar vaste stappen (zoals een modular scale). 
 2. Niet alle contrasten tegelijk aanzetten: Als alles groot, dik, scheef en gekleurd is, valt niks meer op. Zorg voor een of twee opvallende dingen en houd de rest rustig. 
 3. Elementen strak uitlijnen: Zorgen dat teksten en blokken duidelijke horizontale en verticale lijnen volgen in plaats van overal los.
@@ -118,29 +120,28 @@ Net genoeg om het anders te maken, maar niet zoveel dat het afleidt van de inhou
 
 ———————————————————————————————————————
 
-HUISWERK VRIJDAG (VOOR MAANDAG) SPRINT 3  
-￼
-￼
-￼
+HUISWERK VRIJDAG (VOOR MAANDAG) SPRINT 3
+<img width="3211" height="2363" alt="IMG_0584" src="https://github.com/user-attachments/assets/df0712cd-c489-40c3-921f-b788df295c5c" />
+<img width="3275" height="2283" alt="IMG_0585" src="https://github.com/user-attachments/assets/984665e7-d05a-4268-bf11-1491999c3639" />
+<img width="3303" height="2417" alt="IMG_0586" src="https://github.com/user-attachments/assets/12d23486-d085-45a5-9850-a23e9b17f81b" />
+
 Ik kies voor schets 3 (YMCA groter en kleiner). 'YMCA' is al het focuspunt in mijn ontwerp, maar ook in het liedje. Door dit woord te laten pulseren/groter en kleiner te maken, versterk ik het refrein van het lied. In plaats van alleen in te zoomen, combineer ik dit met het variabele font: het lettertype wordt tijdens het groter worden ook zwaarder in gewicht en schreef. Zo blijft de compositie in balans en gebruik ik de eigenschappen van het variabele fontbestand.
 
+<img width="1142" height="366" alt="image" src="https://github.com/user-attachments/assets/09cef47d-adf3-4d4c-b254-45ab87c473b3" />
 
-￼
 Voor deze stap heb ik mijn gekozen schets ('YMCA wordt groter en kleiner') uitgewerkt door de twee deep dives van Sanne te combineren:
 1. Deep dive: Variabele fonts In plaats van alleen een standaard scale() te gebruiken, pas ik direct de variabele assen van het Seraphs lettertype aan via font-variation-settings. Bij 0% staat het gewicht (wght) op 200 en zijn de schreven minimaal (SERF op 0). Richting 100% vloeit dit door naar een dik gewicht van 900 en een volle schreef van 100. Omdat het een variabel font is, berekent de browser automatisch alle tussenstappen (tweening).
 2. Deep dive: CSS animaties Ik heb een @keyframes aangemaakt met de naam --pulse-ymca. Door animation-direction: alternate te gebruiken, speelt de animatie vanzelf soepel heen en weer tussen 0% en 100% met een rustige ease-in-out timing. Om rekening te houden met de toegankelijkheid heb ik de animatie binnen een @media (prefers-reduced-motion: no-preference) media query gezet. Hierdoor beweegt het woord alleen als de bezoeker via zijn instellingen geen bezwaar heeft tegen beweging op het scherm.
 Zo ondersteunt de typografische beweging het ritme van het lied, zonder dat de layout in het grid kapot gaat."
 
-
-￼
+<img width="3024" height="1964" alt="image" src="https://github.com/user-attachments/assets/780291b5-cebd-4f24-8583-5032dd7ae523" />
 Op zn kleinst (tijdens het pulseren)
 
-￼
+<img width="3024" height="1964" alt="image" src="https://github.com/user-attachments/assets/74e7070c-3f21-4906-94b2-6571b0eb266a" />
 Op zijn grootst (tijdens het pulseren)
 
 Iteratie van hierboven:
-
-￼
+<img width="1135" height="405" alt="image" src="https://github.com/user-attachments/assets/72bf70e7-cf02-4b59-adf8-64a4552aa33e" />
 Wat er gebeurde bij de eerste versie:
 In mijn eerste versie probeerde ik het gewicht en de schreven tegelijkertijd te animeren via font-variation-settings: "wght" 200, "SERF" 0. Maar toen ik dit in de browser testte, zag ik dat het woord eigenlijk alleen groter en kleiner werd door de scale(). De letters zelf veranderden niet soepel van dikte.
 Het probleem onderzocht:
@@ -150,17 +151,21 @@ Ik ontdekte twee dingen:
 De iteratie (de oplossing):
 Ik heb mijn code aangepast. In plaats van de "wght"-as in font-variation-settings te forceren, gebruik ik nu direct de standaard CSS-property font-weight in de keyframes (van 100 naar 900). De browser kan deze eigenschap wél perfect vloeiend interpoleren. Ook heb ik de vaste font-weight: 900 van de h1 afgehaald. Nu zie je de letters tijdens het ademen daadwerkelijk van heel dun naar moddervet vloeien, precies zoals bedoeld in de deep dive.
 
-￼
+<img width="3024" height="1964" alt="image" src="https://github.com/user-attachments/assets/90a35a72-9d0c-4c4b-952c-8d8ce776ba24" />
 Op zijn kleinst (tijdens het pulseren)
-￼
+
+<img width="3024" height="1964" alt="image" src="https://github.com/user-attachments/assets/68583a72-e39e-4c9b-b83b-887e841c4237" />
 Op zijn grootst (tijdens het pulseren)
 
 Feedback klasgenoot: “misschien is het leuker om de letters “Y.M.C.A.” Los van elkaar te laten pulseren.
 
 
-Koppelen aan mijn digital garden:       <a href="./oefeningen/ymca-digitalgarden/ymca.html" class="nav-btn-ymca">YMCA EXPERIMENT →</a>
+Koppelen aan mijn digital garden:       
+<a href="./oefeningen/ymca-digitalgarden/ymca.html" class="nav-btn-ymca">YMCA EXPERIMENT →</a>
 -> ik heb deze code geplakt in mijn header.  
-￼
+
+<img width="2994" height="1714" alt="image" src="https://github.com/user-attachments/assets/94ab6033-7a9c-463f-a822-6df4f9444b49" />
+
 
 Ik heb mijn typografie nu gekoppeld aan mijn Digital Garden. In de header van mijn homepage heb ik een hele simpele link toegevoegd die navigeert naar ./oefeningen/ymca-digitalgarden/ymca.html.
 Voor nu heb ik dit heel simpel gehouden in HTML, zodat het experiment te vinden is en getest kan worden vanaf mijn site. Later ga ik deze link met CSS stylen en bepalen waar hij binnen de en layout van mijn Digital Garden het beste past.
