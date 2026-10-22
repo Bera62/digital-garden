@@ -29,7 +29,7 @@ Door de tekst in HTML op te delen en in CSS te spelen met grootte,regelafstand, 
 
 Stap 1:
 <img width="2288" height="1156" alt="image" src="https://github.com/user-attachments/assets/e3026c12-fe48-410c-bdf1-b91b37c4a366" />
-HTML opzet: Bewust geen klasses en geen divs gebruikt. Elk stukje tekst heeft een semantische betekenis gekregen die past bij de song: "<h1>" voor het refrein, <em> voor klemtoon op 'fun', <strong> voor 'to stay', en <p> voor de verbindende tekstfragmenten. Hierdoor is de HTML zuiver en betekenisvol.
+HTML opzet: Bewust géén klasses en géén divs gebruikt. Elk stukje tekst heeft een semantische betekenis gekregen die past bij de song: `<h1>` voor het refrein, `<em>` voor klemtoon op 'fun', `<strong>` voor 'to stay', en `<p>` voor de verbindende tekstfragmenten. Hierdoor is de HTML zuiver en betekenisvol.
 
 Stap 2:
 <img width="2290" height="1606" alt="image" src="https://github.com/user-attachments/assets/b622c847-90b2-4efd-b2af-9a05ac99dcb3" />
