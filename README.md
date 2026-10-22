@@ -169,6 +169,10 @@ Koppelen aan mijn digital garden: 
 
 Ik heb mijn typografie nu gekoppeld aan mijn Digital Garden. In de header van mijn homepage heb ik een hele simpele link toegevoegd die navigeert naar ./oefeningen/ymca-digitalgarden/ymca.html.
 Voor nu heb ik dit heel simpel gehouden in HTML, zodat het experiment te vinden is en getest kan worden vanaf mijn site. Later ga ik deze link met CSS stylen en bepalen waar hij binnen de en layout van mijn Digital Garden het beste past.
+
+WO 21 OKT BI-WEEKLY GEEK 3: 
+<img width="3266" height="2329" alt="image" src="https://github.com/user-attachments/assets/c00e7be4-4e5a-4636-a808-6a95c04500db" />
+
 </details>
 
 
