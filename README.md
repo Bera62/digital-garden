@@ -173,6 +173,26 @@ Voor nu heb ik dit heel simpel gehouden in HTML, zodat het experiment te vinden 
 WO 21 OKT BI-WEEKLY GEEK 3: 
 <img width="3266" height="2329" alt="image" src="https://github.com/user-attachments/assets/c00e7be4-4e5a-4636-a808-6a95c04500db" />
 
+Naast de bi-weekly geek gingen we aan de slag met peerfeedback geven met 3 verschillende klasgenoten en bij ons zat er een studentassisten bij om extra goed het formulier in te vullen.
+<img width="2577" height="3487" alt="IMG_0601" src="https://github.com/user-attachments/assets/41e0e2d0-959b-46d6-8940-aadb91aab600" />
+<img width="2678" height="3721" alt="IMG_0603" src="https://github.com/user-attachments/assets/a5e2cb54-bbbe-4c9d-8c2b-feb9c65f204d" />
+Ik heb op de meeste dingen een goede score gekregen op een paar punten na. 
+
+Mijn top 3 belangrijkste verbeterpunten heb ik op het formulier opgeschreven en hier ga ik de komende tijd aan werken om dit in orde te maken. 
+Top 3:
+1. Learning log compleet maken
+2. Focus state vormgeven in thema van mijn site
+3. Css verminderen en de html verbeteren.
+
+De studentenassistent heeft mijn code bekeken en heeft mij vervolgens feedback en verbeterpunten gegeven. Hiernaast heeft hij mij handige tips gegeven die ik ook zou kunnen toepassen/mee kan nemen voor in de toekomst. 
+
+Een paar punten wat hij heeft benoemd:
+- In een article moet altijd een h2,3,4 etc staan.
+- minder classes: nth of type mag, input is makkelijker dan button, maar er moet een formulier omheen
+- teksten achter de card moeten h2 zijn
+- nesting gebruiken ipv classes
+
+
 </details>
 
 
