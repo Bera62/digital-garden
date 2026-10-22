@@ -1,6 +1,171 @@
 ## Learning Log
 # Model
 
+￼
+<details>
+  <summary>Sprint 3</summary>
+Opdracht 1
+
+Ik heb met mijn schetsen vooral gekeken naar grootte en plaatsing. Bij sommige schetsen wilde ik YMCA meer laten opvallen en bij andere juist het woord fun. Zo probeerde ik meer afwisseling in de tekst te krijgen
+
+Opdracht 2
+
+Wat wil je bij de kijker bereiken met je vormgeving?:
+
+Dat de tekst interessant en speels overkomt.
+
+Hoe voegt jouw opzet iets toe aan de tekst?:
+
+Door te spelen met grootte, plaatsing en ruimte komt er meer speling in de tekst en valt YMCA meer op.
+
+Welke schets wil je digitaal uitwerken?
+De schets waarbij YMCA in het midden staat en de rest van de tekst verdeeld staat in de hoeken. Die vind ik het meest interessant omdat YMCA goed opvalt.
+
+Hoe zou je dit kunnen aanpakken in code?
+Door de tekst in HTML op te delen en in CSS te spelen met grootte,regelafstand, letterafstand en de plaatsing van de tekst.
+
+Stap 1:
+
+￼
+
+HTML opzet: Bewust géén klasses en géén divs gebruikt. Elk stukje tekst heeft een semantische betekenis gekregen die past bij de song: <h1> voor het refrein, <em> voor klemtoon op 'fun', <strong> voor 'to stay', en <p> voor de verbindende tekstfragmenten. Hierdoor is de HTML zuiver en betekenisvol.
+
+Stap 2:
+￼
+￼
+￼
+
+CSS styling zonder klasses: Elementen direct aangesproken via hun tag (em, strong, h1). Voor de twee paragrafen zijn de logische pseudo-classes :first-of-type en :last-of-type gebruikt. Het 3x3 grid plaatst alles op de posities van de schets: hoeken aan de randen en 'YMCA' gigantisch in het midden. Geen kleur toegepast, uitsluitend macro-typografische contrasten (groot vs. klein, italic vs. rechtop, tracking).  Extra uitleg: Omdat classes geen semantische betekenis hebben, wilde ik ze niet gebruiken. Ik heb de songtekst verdeeld over logische tags: em voor de nadruk op fun, strong voor to stay, en h1 voor het refrein. In CSS hoefde ik daardoor alleen die elementen aan te roepen, plus :first-of-type en :last-of-type voor de eerste en laatste paragraaf. Dat houdt de HTML 100% semantisch en schoon.
+
+Checkout maandag wg 1 sprint 3:  Vraag 1: Begrippen uit de artikelen
+
+* Kerning: De ruimte tussen twee specifieke letters netjes maken. Soms staan letters als 'T' en 'y' standaard te ver uit elkaar of botsen ze bijna, en met kerning schuif je dat een stukje bij. 
+* Tracking: De tussenruimte over een heel woord of een hele regel tegelijk aanpassen. Dit gebruik je vooral bij hoofdletters (kapitalen) om ze wat meer ademruimte te geven zodat het makkelijker leest. 
+* Leading: Gewoon de regelafstand, oftewel de ruimte van de ene regel tekst naar de volgende regel eronder. 
+* Flush-left: Tekst die strak links begint en aan de rechterkant rafelt (links uitgelijnd). Dit leest het fijnst omdat je ogen links steeds op dezelfde plek beginnen. 
+* Flush-right: Tekst die juist strak rechts staat en links rafelt. Leuk voor een klein stukje tekst of een quote, maar voor hele verhalen leest het irritant. 
+* Centered: Tekst netjes in het midden uitgelijnd. Staat chic en netjes voor een titelpagina of uitnodiging, maar is drama voor lange lappen tekst. 
+* Justified: Uitgevulde tekst die links én rechts kaarsrecht langs de kantlijn loopt, net zoals in een krant. Nadeel is dat er soms gekke witte gaten tussen woorden ontstaan. 
+* Indent: Dat het eerste regeltje van een alinea een stukje naar binnen springt om te laten zien dat er een nieuw stukje begint. 
+* Outdent: Precies andersom: de eerste regel steekt juist naar links uit buiten de rest van de alinea. 
+* Modular scale: Een soort vaste trap van lettergroottes met een vaste rekenformule. Daardoor gok je niet zomaar wat pixels bij elkaar, maar passen alle koppen en teksten logisch bij elkaar. 
+* Movable type: De oude manier van drukken met losse loden of houten blokjes letters die je met de hand in een bak zette. Hier komen bijna al onze huidige typografieregels vandaan. 
+* Focus punt (Focal point): Het allereerste ding op je scherm waar je oog meteen naartoe getrokken wordt omdat het eruit springt. 
+* Vijf soorten contrast: De manieren om zo'n focuspunt te maken: 
+    1. Grootte (size): Iets heel groot of juist piepklein maken. 
+    2. Kleur (color): Iets feller, lichter of donkerder maken. 
+    3. Ruimte (space): Iets helemaal apart zetten met een bak witruimte eromheen. 
+    4. Gewicht (weight): Een tekst extra dik (bold) of juist superdun maken. 
+    5. Vorm (shape): Een opvallende vorm kiezen, zoals schuin/cursief tegenover strakke rechte letters. 
+* Spatial tension: De visuele spanning op je scherm door hoe dingen staan. Als je iets expres niet saai in het midden zet maar juist strak tegen de rand plakt, voelt je ontwerp meteen levendiger. 
+
+Vraag 2: Jouw ideale regellengte (measure) en waarom
+Voor gewone tekst vind ik 45 tot 75 tekens per regel (inclusief spaties) het fijnst.
+Waarom:
+Als regels te lang zijn (meer dan 75 tekens), raken je ogen snel vermoeid en moet je steeds zoeken waar de volgende regel links nou begint. Maar als regels te kort zijn (minder dan 45), vliegen je ogen telkens heen en weer en krijg je superveel afgebroken woorden. Daartussenin leest het gewoon lekker vlot weg.
+
+Vraag 3: Eén variabele voor hiërarchie (en waarom)
+Als ik er echt maar één mocht kiezen, ga ik voor Grootte (Size).
+Waarom:
+Grootte snapt iedereen meteen. Je kijkt altijd instinctief eerst naar het grootste ding op een pagina. Zelfs als je geen kleuren gebruikt en maar één lettertype hebt, kun je puur door het formaat direct laten zien: "dit is de titel en dit zijn de details". Dat zag je ook bij mijn YMCA-schets: doordat YMCA mega groot in beeld staat, weet je meteen waar het over gaat.
+
+Huiswerk voor woensdag (sprint 3, werkgroep 2)
+￼
+
+Ik heb mijn schets als eerste omgezet naar gewone HTML en een beetje basis-CSS. De hele zin heb ik opgeknipt in losse stukjes: p, em, strong en een h1 voor het midden. In de CSS heb ik die woorden naar de vier hoeken geduwd en 'YMCA' flink groot in het midden gezet. Dit is nu de eerste ruwe versie in zwart-wit met het Seraphs lettertype.
+
+Dingen die ik nog niet naar CSS kon vertalen (Huiswerkvraag 2)
+- Het schalen van 'YMCA': In mijn schets vult 'YMCA' echt lekker het midden. Maar in de browser met vaste pixels of rems werd het op mobiel meteen veel te groot waardoor de tekst afbrak, en op een groot scherm juist weer te klein. Ik wist nog niet goed hoe ik dit soepel mee kon laten schalen met het scherm.  
+- De witruimte en afstanden: De woorden staan nu wel ongeveer in de hoeken, maar de marges heb ik gewoon een beetje op het oog gedaan. Ik weet nog niet hoe je die afstanden echt netjes koppelt aan een vast typografisch ritme of grid.  
+- De variabele assen van Seraphs: Op papier hebben woorden als 'fun' en 'to stay' net even een andere vibe. Nu heb ik gewoon standaard em en strong gepakt, maar ik moet nog uitzoeken hoe je die specifieke assen van het Seraphs font aanpast met font-variation-settings.  
+- (De spanning uit de schets: Op papier voelt de witruimte tussen het midden en de hoeken een stuk beter. In de browser oogt het nu nog wat stijfjes, vooral omdat het nog niet strak in een goed grid vastzit.)
+—————————————————————————————————————————
+
+ Opdracht:
+
+1.Bepaal de line-height bij je gekozen font-size
+2.Baseer je column-width op een veelvoud van je line-height
+3.Kun je daarmee een grid maken dat past bij je  pagina ontwerp, rekening houdend met je measure?
+4.Ja? Ga dan verder met bouwen aan je page Nee? Pas line-height en/of font-size aan en ga terug naar 1.
+ Antwoorden:  
+1. Voor de normale tekst heb ik een font-size van 1.25rem (20px) gekozen. Daar heb ik een line-height van 1.5 bij gepakt, wat uit de artikelen ook naar voren kwam als fijne verhouding. Dat betekent dat één regelhoogte bij mij 20px × 1.5 = 30px is. Die 30px is meteen mijn vaste bouwsteen voor de rest van de pagina.
+2. Mijn basiseenheid is 30px. Voor de twee buitenste kolommen (waar de woorden in de hoeken in staan) heb ik dat vermenigvuldigd met 5: 5 × 30px = 150px. De middelste kolom heeft gewoon 1fr gekregen, zodat 'YMCA' alle overgebleven ruimte in het midden opeist.
+3. Ja, dit werkt heel relaxed. Omdat er in die hoeken maar korte stukjes tekst staan zoals it’s en to stay, passen die letters makkelijk binnen die 150px breedte zonder dat ze raar worden afgebroken.
+4. Ik heb die 30px ook direct doorgevoerd in de rest van de pagina: de padding rondom het hele scherm is precies 2 × 30px = 60px. Zo klopt de witruimte overal wiskundig met de regelafstand van de tekst.
+
+
+￼
+￼
+Hier heb ik het grid gekoppeld aan de typografie. Mijn normale tekst is 20px met een regelafstand van 1.5, wat neerkomt op 30px per regel. In plaats van willekeurige getallen te kiezen, heb ik de zij-kolommen 150px breed gemaakt (5 × die 30px) en de padding rond het scherm 60px (2 × die 30px). De middelste kolom pakt 1fr voor 'YMCA'. Zo klopt de verhouding overal met één vaste ritme-eenheid.
+
+
+￼
+Het resultaat in de browser met de grid-overlay aan. Je ziet dat de woorden in de hoeken netjes binnen de berekende kolommen van 150px blijven en 'YMCA' precies in het midden staat. Door clamp() schaalt de grote titel vanzelf mee met het scherm, zonder dat hij uit zijn gridvak breekt.
+
+Checkout woensdag sprint 3 werkgroep 2:  1. Waarom een grid gebruiken?
+Voor mij als ontwerper: Het geeft een soort houvast en structuur. Ik hoef niet steeds te gokken waar iets moet staan. Mijn CSS blijft hierdoor overzichtelijk.
+Voor de bezoeker: Het zorgt voor rust. Doordat elementen op vaste lijnen staan, begrijpt je sneller hoe de pagina in elkaar zit en leest het veel fijner.
+
+2. Drie manieren om chaos in je ontwerp te voorkomen
+1. Een vaste schaal of modulair grid gebruiken: Geen random groottes of marges kiezen, maar vaste stappen (zoals een modular scale). 
+2. Niet alle contrasten tegelijk aanzetten: Als alles groot, dik, scheef en gekleurd is, valt niks meer op. Zorg voor een of twee opvallende dingen en houd de rest rustig. 
+3. Elementen strak uitlijnen: Zorgen dat teksten en blokken duidelijke horizontale en verticale lijnen volgen in plaats van overal los.
+
+3. Hoeveel gekkigheid moet er in je werk zitten?
+Net genoeg om het anders te maken, maar niet zoveel dat het afleidt van de inhoud.
+
+
+———————————————————————————————————————
+
+HUISWERK VRIJDAG (VOOR MAANDAG) SPRINT 3  
+￼
+￼
+￼
+Ik kies voor schets 3 (YMCA groter en kleiner). 'YMCA' is al het focuspunt in mijn ontwerp, maar ook in het liedje. Door dit woord te laten pulseren/groter en kleiner te maken, versterk ik het refrein van het lied. In plaats van alleen in te zoomen, combineer ik dit met het variabele font: het lettertype wordt tijdens het groter worden ook zwaarder in gewicht en schreef. Zo blijft de compositie in balans en gebruik ik de eigenschappen van het variabele fontbestand.
+
+
+￼
+Voor deze stap heb ik mijn gekozen schets ('YMCA wordt groter en kleiner') uitgewerkt door de twee deep dives van Sanne te combineren:
+1. Deep dive: Variabele fonts In plaats van alleen een standaard scale() te gebruiken, pas ik direct de variabele assen van het Seraphs lettertype aan via font-variation-settings. Bij 0% staat het gewicht (wght) op 200 en zijn de schreven minimaal (SERF op 0). Richting 100% vloeit dit door naar een dik gewicht van 900 en een volle schreef van 100. Omdat het een variabel font is, berekent de browser automatisch alle tussenstappen (tweening).
+2. Deep dive: CSS animaties Ik heb een @keyframes aangemaakt met de naam --pulse-ymca. Door animation-direction: alternate te gebruiken, speelt de animatie vanzelf soepel heen en weer tussen 0% en 100% met een rustige ease-in-out timing. Om rekening te houden met de toegankelijkheid heb ik de animatie binnen een @media (prefers-reduced-motion: no-preference) media query gezet. Hierdoor beweegt het woord alleen als de bezoeker via zijn instellingen geen bezwaar heeft tegen beweging op het scherm.
+Zo ondersteunt de typografische beweging het ritme van het lied, zonder dat de layout in het grid kapot gaat."
+
+
+￼
+Op zn kleinst (tijdens het pulseren)
+
+￼
+Op zijn grootst (tijdens het pulseren)
+
+Iteratie van hierboven:
+
+￼
+Wat er gebeurde bij de eerste versie:
+In mijn eerste versie probeerde ik het gewicht en de schreven tegelijkertijd te animeren via font-variation-settings: "wght" 200, "SERF" 0. Maar toen ik dit in de browser testte, zag ik dat het woord eigenlijk alleen groter en kleiner werd door de scale(). De letters zelf veranderden niet soepel van dikte.
+Het probleem onderzocht:
+Ik ontdekte twee dingen:
+1. Browsers hebben moeite om de losse tekst-strings van font-variation-settings vloeiend tussen stappen te berekenen (tweenen) binnen @keyframes.
+2. In mijn CSS stond op main h1 nog een vaste font-weight: 900;, waardoor de browser die dikte vasthield in plaats van vanaf een lichte dikte te starten.
+De iteratie (de oplossing):
+Ik heb mijn code aangepast. In plaats van de "wght"-as in font-variation-settings te forceren, gebruik ik nu direct de standaard CSS-property font-weight in de keyframes (van 100 naar 900). De browser kan deze eigenschap wél perfect vloeiend interpoleren. Ook heb ik de vaste font-weight: 900 van de h1 afgehaald. Nu zie je de letters tijdens het ademen daadwerkelijk van heel dun naar moddervet vloeien, precies zoals bedoeld in de deep dive.
+
+￼
+Op zijn kleinst (tijdens het pulseren)
+￼
+Op zijn grootst (tijdens het pulseren)
+
+Feedback klasgenoot: “misschien is het leuker om de letters “Y.M.C.A.” Los van elkaar te laten pulseren.
+
+
+Koppelen aan mijn digital garden:       <a href="./oefeningen/ymca-digitalgarden/ymca.html" class="nav-btn-ymca">YMCA EXPERIMENT →</a>
+-> ik heb deze code geplakt in mijn header.  
+￼
+
+Ik heb mijn typografie nu gekoppeld aan mijn Digital Garden. In de header van mijn homepage heb ik een hele simpele link toegevoegd die navigeert naar ./oefeningen/ymca-digitalgarden/ymca.html.
+Voor nu heb ik dit heel simpel gehouden in HTML, zodat het experiment te vinden is en getest kan worden vanaf mijn site. Later ga ik deze link met CSS stylen en bepalen waar hij binnen de en layout van mijn Digital Garden het beste past.
+</details>
+
+
 ### Fotografie toevoegen: De Shutter & Viewfinder Reel (CSS)
 Na twee filmrollen met videobreakdowns wilde ik onderaan de pagina iets anders doen. Naast videografie doe ik ook aan fotografie, dus het leek me tof om een speciale sectie voor stills toe te voegen. Ik wilde niet zomaar een standaard fotogalerij neerzetten, maar bezoekers echt het gevoel geven dat ze door een camera kijken en zelf een foto "schieten".
 
