@@ -4,6 +4,7 @@
 ￼
 <details>
   <summary>Sprint 3</summary>
+
 Opdracht 1
 
 Ik heb met mijn schetsen vooral gekeken naar grootte en plaatsing. Bij sommige schetsen wilde ik YMCA meer laten opvallen en bij andere juist het woord fun. Zo probeerde ik meer afwisseling in de tekst te krijgen
