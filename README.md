@@ -228,7 +228,7 @@ Viewfinder styling: Het kader heb ik voorzien van subtiele witte vizierhoeken op
 
 Uitbreiden van de fotoreeks: Met een korte set beelden viel de sluiter te vaak op dezelfde foto's. Ik heb de reeks uitgebreid naar 11 unieke foto's (en die 1x gedupliceerd voor een naadloze CSS translate loop). Hierdoor voelt elke klik onvoorspelbaar en als een echte momentopname.
 
-Oepsie momentjes & iteraties:
+iteraties:
 
 Afgekapte portretfoto's: Veel van mijn foto's zijn staande portretten. Omdat het kader maar 260px hoog was met object-fit: cover, werden alle hoofden onthoofd. Opgelost door de viewfinder te verhogen naar 380px en object-position: top center mee te geven. Hierdoor vullen de beelden nog steeds het hele vlak, maar blijven gezichten en ogen altijd scherp en netjes in beeld.
 
