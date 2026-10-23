@@ -1,5 +1,5 @@
 /* =========================================================
-   1. THEMA-INSTELLINGEN & VARIABELEN (LIGHT & DARK 101)
+   THEMA-INSTELLINGEN
    ========================================================= */
 
 html {
@@ -32,13 +32,14 @@ html:has([value="dark-theme"]:checked) {
 
 
 /* =========================================================
-   2. BASIS RESET & ALGEMENE LAYOUT
+   BASIS ALGEMENE LAYOUT
    ========================================================= */
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline-color: var(--color-accent);
 }
 
 body {
@@ -48,15 +49,12 @@ body {
   font-family: sans-serif;
   padding: 1rem 1rem 3rem 1rem;
 }
-/* Kolombreedte geoptimaliseerd voor mobiel */
+
 .single-column {
   max-width: 420px;
   margin: 0 auto;
 }
 
-/* =========================================================
-   3. HOOFDNAVIGATIE & THEMA-SWITCHER (LOG.HTML)
-   ========================================================= */
 
 header.main-header {
   display: flex;
@@ -118,18 +116,12 @@ header.main-header a {
   font-weight: bold;
 }
 
-
-/* =========================================================
-   4. DOSSIER PAGINA (LOG.HTML): STRUCTUUR & TITEL
-   ========================================================= */
-
 .video-project {
   position: relative;
   border-left: 2px solid var(--border-color);
   padding-left: 1rem;
 }
 
-/* Grote achterliggende titel (schaalt automatisch mee bij langere woorden) */
 h1 {
   font-size: clamp(2.4rem, 8.5vw, 4rem);
   line-height: 0.85;
@@ -146,11 +138,6 @@ hr {
   margin: 4rem 0;
 }
 
-
-/* =========================================================
-   5. DE GROTE 35MM FILMROL CONTAINER (.cards-grid)
-   ========================================================= */
-
 .cards-grid {
   list-style: none;
   margin: 0;
@@ -166,7 +153,6 @@ hr {
   scroll-snap-type: x mandatory;
 }
 
-/* Tandwielgaten boven en onder */
 .cards-grid::before,
 .cards-grid::after {
   content: "";
@@ -197,7 +183,7 @@ hr {
 
 
 /* =========================================================
-   6. INDIVIDUELE FILMFRAMES (.card)
+   INDIVIDUELE FILMFRAMES
    ========================================================= */
 
 .card {
@@ -237,7 +223,6 @@ figure img {
   display: block;
 }
 
-/* Colorgrading 3 beelden grid */
 figure.grade-grid {
   display: flex;
   gap: 4px;
@@ -268,7 +253,7 @@ figure.grade-grid figcaption {
 
 
 /* =========================================================
-   7. DOSSIER PAGINA: TEKST & ACTIES
+   HOME PAGINA
    ========================================================= */
 
 .card-content {
@@ -329,7 +314,7 @@ footer a {
 
 
 /* =========================================================
-   8. DESKTOP RESPONSIVE GRID (VANAF 768PX)
+   DESKTOP RESPONSIVE GRID
    ========================================================= */
 
 @media (min-width: 768px) {
@@ -352,7 +337,7 @@ footer a {
 
 
 /* =========================================================
-   9. SCHERM 1 (INDEX.HTML): ENTER GARDEN VIEWPORT
+   SCHERM 1 ENTER GARDEN VIEWPORT
    ========================================================= */
 
 body.intro-body {
@@ -405,17 +390,18 @@ strong.crosshair {
   position: absolute;
   bottom: 2rem;
   text-align: center;
+
+  p {
+    font-size: 0.75rem;
+    color: var(--color-subtle);
+    letter-spacing: 0.05em;
+  }
 }
 
-.intro-footer p {
-  font-size: 0.75rem;
-  color: var(--color-subtle);
-  letter-spacing: 0.05em;
-}
 
 
 /* =========================================================
-   10. SCHERM 2 (HOME.HTML): DATA & PRIVACY CARD
+   SCHERM 2
    ========================================================= */
 
 .consent-card {
@@ -508,7 +494,7 @@ small.btn-label {
 }
 
 /* =========================================================
-   FOTOGRAFIE / SHUTTER SECTIE (PURE CSS ZONDER JS)
+   FOTOGRAFIE/SHUTTER SECTIE
    ========================================================= */
 
 .photo-shutter-section {
@@ -535,7 +521,6 @@ small.btn-label {
   margin-top: 1.8rem;
 }
 
-/* Sluiterknop als label */
 .shutter-btn {
   background: var(--surface);
   border: 2px solid var(--border-color);
@@ -566,18 +551,16 @@ small.btn-label {
   transition: background 0.2s ease;
 }
 
-/* Viewfinder Kader */
 .viewfinder-frame {
   position: relative;
   width: 100%;
-  height: 380px; /* Was 260px, dit geeft direct een natuurlijk fotokader */
+  height: 380px;
   background-color: #000000;
   border: 1px solid var(--border-color);
   border-radius: 4px;
   overflow: hidden;
 }
 
-/* Viewfinder Hoeken & Kruis */
 .viewfinder-corner {
   position: absolute;
   width: 12px;
@@ -646,12 +629,11 @@ small.btn-label {
   width: 1px;
 }
 
-/* De filmstrip animatie */
 .reel-track {
   display: flex;
   height: 100%;
   width: max-content;
-  animation: reel-scroll 10s linear infinite;
+  animation: reel-scroll 16s linear infinite;
   will-change: transform;
 }
 
@@ -672,12 +654,11 @@ small.btn-label {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center; /* Hoofden en ogen blijven altijd zichtbaar */
+  object-position: top center;
   display: block;
   opacity: 0.85;
 }
 
-/* Tekst Detail Box */
 .shot-detail {
   background-color: var(--surface);
   border: 1px solid var(--border-color);
@@ -717,21 +698,14 @@ small.btn-label {
   display: none;
 }
 
-/* =========================================================
-   HET MAGISCHE CSS DEEL (CHECKBOX TRIGGER)
-   ========================================================= */
-
-/* 1. Pauzeer de rijdende track */
 #shutterToggle:checked ~ .viewfinder-frame .reel-track {
   animation-play-state: paused;
 }
 
-/* 2. Verander de knop naar groen (focus locked) */
 #shutterToggle:checked ~ .shutter-header .shutter-btn .shutter-inner {
   background: radial-gradient(circle, #44bb44 0%, #228822 100%);
 }
 
-/* 3. Schakel tussen de tekstblokken */
 #shutterToggle:checked ~ .shot-detail .status-scanning {
   display: none;
 }
